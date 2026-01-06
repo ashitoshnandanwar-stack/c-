@@ -52,3 +52,6 @@ int *ptr1 = ptr2 + 2;
 cout<< ptr1 - ptr2; //output 2
 ```
 - all relational operator are worked in pointer(>,<,== etc).
+- Pointer size depends on system architecture, NOT data type! <br>
+  32-bit system → All pointers are 4 bytes <br>
+  64-bit system → All pointers are 8 bytes <br>
