@@ -78,3 +78,16 @@ cout<< ptr1 - ptr2; //output 2
 | `max(a,b)`  | Maximum              | `max(10,20)` → `20` |
 | `min(a,b)`  | Minimum              | `min(10,20)` → `10` |
 
+## 🔹 Comparison: new vs malloc, calloc, realloc
+
+| Feature            | `new` (C++)                    | `malloc()` (C)                        | `calloc()` (C)                           | `realloc()` (C)                  |
+| ------------------ | ------------------------------ | -----------------------------------   | ---------------------------------------- | -------------------------------- |
+| Language           | C++                            | C / C++                               | C / C++                                  | C / C++                          |
+| Memory Allocation  | Allocates memory for objects   | Allocates raw memory                  | Allocates & initializes to zero          | Resizes allocated memory         |
+| Initialization     | Calls **constructor**          | No initialization                     | Initializes all bytes to **0**           | No initialization                |
+| Type Safety        | Type-safe                      | Returns `void*` (needs cast)          | Returns `void*`                          | Returns `void*`                  |
+| Syntax             | `int *p = new int;`            | `int *p = (int*)malloc(sizeof(int));` | `int *p = (int*)calloc(1, sizeof(int));` | `p = (int*)realloc(p, newSize);` |
+| Failure Handling   | Throws exception (`bad_alloc`) | Returns `NULL`                        | Returns `NULL`                           | Returns `NULL`                   |
+| Deallocation       | `delete p;`                    | `free(p);`                            | `free(p);`                               | `free(p);`                       |
+| Works with Objects | Yes (calls constructor)        | No                                    | No                                       | No                               |
+| Resize Memory      | No                             | No                                    | No                                       | **Yes**                          |
