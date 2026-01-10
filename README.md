@@ -55,3 +55,26 @@ cout<< ptr1 - ptr2; //output 2
 - Pointer size depends on system architecture, NOT data type! <br>
   32-bit system → All pointers are 4 bytes <br>
   64-bit system → All pointers are 8 bytes <br>
+
+<hr>
+
+##  Math library functions etc.
+
+#include <cmath>
+| Function    | Description          | Example             |
+| ----------- | -------------------- | ------------------- |
+| `sqrt(x)`   | Square root          | `sqrt(16)` → `4`    |
+| `pow(x, y)` | x raised to power y  | `pow(2, 3)` → `8`   |
+| `abs(x)`    | Absolute value       | `abs(-5)` → `5`     |
+| `ceil(x)`   | Smallest integer ≥ x | `ceil(4.2)` → `5`   |
+| `floor(x)`  | Largest integer ≤ x  | `floor(4.9)` → `4`  |
+| `round(x)`  | Nearest integer      | `round(4.6)` → `5`  |
+| `log(x)`    | Natural log (base e) | `log(2.7)`          |
+| `log10(x)`  | Log base 10          | `log10(100)` → `2`  |
+| `exp(x)`    | e^x                  | `exp(1)` → `2.718…` |
+| `sin(x)`    | Sine (radians)       | `sin(0)` → `0`      |
+| `cos(x)`    | Cosine (radians)     | `cos(0)` → `1`      |
+| `tan(x)`    | Tangent (radians)    | `tan(0)` → `0`      |
+| `max(a,b)`  | Maximum              | `max(10,20)` → `20` |
+| `min(a,b)`  | Minimum              | `min(10,20)` → `10` |
+
