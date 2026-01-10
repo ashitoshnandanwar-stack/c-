@@ -91,3 +91,14 @@ cout<< ptr1 - ptr2; //output 2
 | Deallocation       | `delete p;`                    | `free(p);`                            | `free(p);`                               | `free(p);`                       |
 | Works with Objects | Yes (calls constructor)        | No                                    | No                                       | No                               |
 | Resize Memory      | No                             | No                                    | No                                       | **Yes**                          |
+
+
+
+<hr>
+
+
+| Access Specifier | Accessible Inside Class | Accessible Outside Class | Inherited by Derived Class |
+| ---------------- | ----------------------- | ------------------------ | -------------------------- |
+| `public`         | Yes                     | Yes                      | Yes                        |
+| `private`        | Yes                     | No                       | No                         |
+| `protected`      | Yes                     | No                       | Yes                        |
