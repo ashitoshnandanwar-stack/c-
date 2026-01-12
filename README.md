@@ -102,3 +102,18 @@ cout<< ptr1 - ptr2; //output 2
 | `public`         | Yes                     | Yes                      | Yes                        |
 | `private`        | Yes                     | No                       | No                         |
 | `protected`      | Yes                     | No                       | Yes                        |
+
+
+<hr>
+
+| Data Type | Java Size (Fixed) | C++ Size (Compiler Dependent) |
+| --------- | ----------------- | ----------------------------- |
+| `byte`    | 1 byte (8-bit)    | — (use `char` = 1 byte)       |
+| `short`   | 2 bytes           | 2 bytes (usually)             |
+| `int`     | 4 bytes           | 2 or 4 bytes                  |
+| `long`    | 8 bytes           | 4 or 8 bytes                  |
+| `float`   | 4 bytes           | 4 bytes                       |
+| `double`  | 8 bytes           | 8 bytes                       |
+| `char`    | 2 bytes (Unicode) | 1 byte                        |
+| `boolean` | 1 byte (logical)  | No built-in (`bool` = 1 byte) |
+
